@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <style type:text/css></style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Editor</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <h3>HCJ Code Editor</h3>
+        <label id="darkMode"></label>
+
+    </header>
+    <section class="container">
+    <div class="page">
+    <div class="codeEditor" >
+        <label><i class='bx bxl-html5' style='color:#f25c09'  ></i>HTML</label>
+        <textarea onkeyup="Run ()"spellcheck="false" id="htmlCode" ></textarea>
+        
+        <label><i class='bx bxl-css3' style='color:#4388ff'  ></i>CSS</label>
+        <textarea onkeyup="Run ()" spellcheck="false" id="cssCode" ></textarea>
+
+        <label><i class='bx bxl-javascript' style='color:#f4e22b'  ></i>JavaScript</label>
+        <textarea onkeyup="Run ()" spellcheck="false" id="jsCode" ></textarea>
+    </div>
+    
+        <div class="output">
+        <label><i class='bx bx-paper-plane' style='color:#02c00f'  ></i>Output</label>
+        <iframe id="output"></iframe>
+        </div>
+    </div>
+</section>
+    <!--<button onclick="input()" id="Run">Run</button>-->
+
+<script src="main.js"></script> 
+</body>
+</html>
